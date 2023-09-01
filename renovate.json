@@ -1,13 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [":disableMajorUpdates", ":disablePeerDependencies", ":disableRateLimiting", ":ignoreModulesAndTests", ":npm"],
+  "extends": ["config:recommended", ":disableMajorUpdates"],
   "ignoreDeps": ["@the-platform-group/formatters", "@platform-group/prettier-config"],
   "baseBranches": ["main"],
   "rangeStrategy": "bump",
   "packageRules": [
     {
+      "matchDepTypes": ["peerDependencies"],
+      "enabled": false
+    },
+    {
       "matchDepTypes": ["dependencies"],
-      "groupName": "dependencies"
+      "groupName": null
     },
     {
       "matchDepTypes": ["devDependencies"],
