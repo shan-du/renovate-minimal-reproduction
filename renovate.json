@@ -10,12 +10,54 @@
       "enabled": false
     },
     {
-      "matchDepTypes": ["dependencies"],
-      "groupName": null
+      "matchDepTypes": ["devDependencies"],
+      "groupName": null,
+      "rangeStrategy": "bump"
     },
     {
-      "matchDepTypes": ["devDependencies"],
-      "groupName": null
+      "matchDepTypes": ["dependencies"],
+      "groupName": null,
+      "rangeStrategy": "bump"
+    },
+    {
+      "matchPackagePrefixes": ["@syncfusion"],
+      "groupName": "Syncfusion"
+    },
+    {
+      "matchPackagePrefixes": ["@mui"],
+      "groupName": "MUI"
+    },
+    {
+      "matchPackagePrefixes": ["@emotion"],
+      "groupName": "Emotion"
+    },
+    {
+      "matchPackagePrefixes": ["react"],
+      "groupName": "React"
+    },
+    {
+      "matchPackagePrefixes": ["eslint"],
+      "groupName": "ESLint"
+    },
+    {
+      "matchPackagePrefixes": ["@babel"],
+      "groupName": "Babel"
+    },
+    {
+      "matchPackagePrefixes": ["@storybook"],
+      "groupName": "Storybook"
+    },
+    {
+      "matchPackagePrefixes": ["@testing-library"],
+      "groupName": "Testing-Library"
+    },
+    {
+      "matchPackagePrefixes": ["jest"],
+      "groupName": "Jest"
+    },
+    {
+      "matchPackagePrefixes": ["babel-"],
+      "groupName": "Babel-Jest"
     }
   ],
   "prConcurrentLimit": 0,
